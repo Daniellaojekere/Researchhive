@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daniellaamba.github.io/Researchhive/sitemap.xml
