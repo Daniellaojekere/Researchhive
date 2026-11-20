@@ -1,337 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ResearchHive Analytics Ltd | Research Methodology, Data Engineering &amp; M&amp;E Consulting</title>
-<meta name="description" content="ResearchHive Analytics Ltd helps NGOs, academic researchers, and breeding programmes turn raw data into decisions — through custom R Shiny platforms, survey digitalisation (KoboToolbox/ODK), M&E design, and graduate research support. Based in Nigeria.">
-<meta name="keywords" content="ResearchHive, ResearchHive Analytics, data analytics Nigeria, R Shiny developer, survey data analysis, KoboToolbox ODK setup, M&E consulting Nigeria, thesis data analysis support, GENOTwin, BreedVantage">
-<link rel="canonical" href="https://daniellaamba.github.io/Researchhive/">
-<meta name="google-site-verification" content="CJ13K1dE7gF1InDDg0PVo1RCVK0bYw9uWq3yo1dw0Ww" />
-
-<!-- Open Graph / social preview -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ResearchHive Analytics | Research, MERL & Data Intelligence</title>
+<meta name="description" content="ResearchHive Analytics Ltd is an African research, MERL and data intelligence partner for NGOs, research institutions, government and business.">
+<link rel="canonical" href="https://daniellaojekere.github.io/Researchhive/">
+<meta name="google-site-verification" content="Zp796G4UZMfhat3cHn0uabc0TzHQWBswNhGbTzUepqc">
 <meta property="og:type" content="website">
-<meta property="og:title" content="ResearchHive Analytics Ltd">
-<meta property="og:description" content="Rigorous research support and data systems for institutions that need to get it right. R Shiny engineering, survey digitalisation, M&E consulting, and graduate research support.">
-<meta property="og:url" content="https://daniellaamba.github.io/Researchhive/">
-
-<!-- Structured data so Google understands this is a real organisation -->
+<meta property="og:site_name" content="ResearchHive Analytics Ltd">
+<meta property="og:title" content="ResearchHive Analytics | Research, MERL & Data Intelligence">
+<meta property="og:description" content="ResearchHive Analytics Ltd is an African research, MERL and data intelligence partner for NGOs, research institutions, government and business.">
+<meta property="og:url" content="https://daniellaojekere.github.io/Researchhive/">
+<meta property="og:image" content="https://daniellaojekere.github.io/Researchhive/assets/images/og-card.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://daniellaojekere.github.io/Researchhive/assets/images/og-card.png">
+<meta name="twitter:title" content="ResearchHive Analytics | Research, MERL & Data Intelligence">
+<meta name="twitter:description" content="ResearchHive Analytics Ltd is an African research, MERL and data intelligence partner for NGOs, research institutions, government and business.">
+<link rel="icon" type="image/png" href="assets/images/favicon.png"><link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "ResearchHive Analytics Ltd",
-  "description": "Research methodology, R Shiny engineering, survey digitalisation, and M&E consulting for NGOs, researchers, and breeding programmes.",
-  "email": "researchhivesanalytics@gmail.com",
-  "telephone": "+2348114547997",
-  "address": { "@type": "PostalAddress", "addressCountry": "NG" },
-  "areaServed": "NG",
-  "sameAs": []
-}
+{"@context":"https://schema.org","@type":"Organization","name":"ResearchHive Analytics Ltd","url":"https://daniellaojekere.github.io/Researchhive/","logo":"https://daniellaojekere.github.io/Researchhive/assets/images/logo-mark.png","image":"https://daniellaojekere.github.io/Researchhive/assets/images/og-card.png","slogan":"Research. Data. Intelligence. Impact.","description":"Research, monitoring and evaluation, data systems and digital solutions for NGOs, research institutions, government agencies and businesses.","email":"researchhivesanalytics@gmail.com","telephone":"+2348114547997","address":{"@type":"PostalAddress","addressCountry":"NG"},"areaServed":"Africa","knowsAbout":["Research methodology","Statistical analysis","Monitoring and evaluation","KoboToolbox","Power BI","R Shiny","Plant breeding analytics","Genomic prediction"],"contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"researchhivesanalytics@gmail.com","telephone":"+2348114547997"}}
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap">
 
-<style>
-  :root {
-    --navy: #14293D;
-    --navy-deep: #0C1B29;
-    --gold: #C89B3C;
-    --cream: #FAF8F3;
-    --line: #E4DFD3;
-    --muted: #5B6672;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--cream); color: #1C2B39;
-    font-family: 'Inter', -apple-system, Segoe UI, sans-serif;
-  }
-  h1, h2, h3, h4 { font-family: 'Lora', serif; color: var(--navy); font-weight: 600; margin: 0; }
-  a { color: inherit; }
-  .eyebrow {
-    text-transform: uppercase; letter-spacing: 2px; font-size: 12px;
-    font-weight: 600; color: var(--gold); margin-bottom: 10px;
-  }
 
-  /* top contact bar */
-  .contact-bar {
-    background: var(--navy-deep); color: #D8DEE4; padding: 8px 6vw;
-    display: flex; justify-content: flex-end; gap: 24px; font-size: 13px; flex-wrap: wrap;
-  }
-  .contact-bar a { text-decoration: none; }
-  .contact-bar a:hover { color: var(--gold); }
 
-  /* nav */
-  .site-nav {
-    background: var(--cream); border-bottom: 1px solid var(--line); padding: 16px 6vw;
-    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
-  }
-  .brand { font-family: 'Lora', serif; font-weight: 700; font-size: 20px; color: var(--navy); }
-  .brand span { color: var(--gold); }
-  .nav-links a {
-    color: var(--navy); text-decoration: none; font-size: 14.5px; font-weight: 500; margin-left: 24px;
-  }
-  .nav-links a:hover { color: var(--gold); }
-
-  /* hero */
-  .hero {
-    background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 100%);
-    color: #F4F1E8; padding: 90px 8vw 80px 8vw;
-  }
-  .hero h1 { color: #F4F1E8; font-size: 42px; line-height: 1.25; max-width: 760px; }
-  .hero p.lede { font-size: 18px; color: #C9D0D8; max-width: 620px; line-height: 1.7; margin-top: 18px; }
-  .btn { display: inline-block; text-decoration: none; padding: 12px 26px; border-radius: 2px; font-weight: 600; font-size: 15px; }
-  .btn-gold { background: var(--gold); color: var(--navy-deep); }
-  .btn-gold:hover { background: #b6872f; color: white; }
-  .btn-ghost { background: transparent; border: 1px solid rgba(244,241,232,0.4); color: #F4F1E8; }
-  .btn-ghost:hover { border-color: #F4F1E8; background: rgba(255,255,255,0.06); }
-
-  /* sections */
-  .section { padding: 70px 8vw; border-bottom: 1px solid var(--line); }
-  .section-title { font-size: 30px; margin-bottom: 8px; }
-  .section-sub { color: var(--muted); font-size: 16px; max-width: 640px; margin: 0 0 40px 0; }
-  .grid { display: grid; gap: 24px; }
-  .grid-4 { grid-template-columns: repeat(4, 1fr); }
-  .grid-3 { grid-template-columns: repeat(3, 1fr); }
-  .grid-2 { grid-template-columns: repeat(2, 1fr); }
-
-  .pillar { border-top: 3px solid var(--navy); padding-top: 16px; }
-  .pillar h4 { font-size: 17px; margin-bottom: 8px; }
-  .pillar p { color: var(--muted); font-size: 14.5px; line-height: 1.6; margin: 0; }
-
-  .case-card { background: white; border: 1px solid var(--line); padding: 26px; }
-  .case-tag {
-    display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
-    color: var(--navy); background: #EFE9DA; padding: 4px 10px; margin-bottom: 12px;
-  }
-  .case-card h3 { font-size: 19px; margin-bottom: 8px; }
-  .case-card p { color: var(--muted); font-size: 14.5px; line-height: 1.6; }
-  .case-card ul { color: var(--muted); font-size: 13.5px; padding-left: 18px; margin: 10px 0 0 0; }
-
-  .service-row { display: flex; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--line); }
-  .service-row:last-child { border-bottom: none; }
-  .service-row .num { font-family: 'Lora', serif; font-size: 26px; color: var(--gold); min-width: 50px; }
-  .service-row h3 { font-size: 19px; margin-bottom: 6px; }
-  .service-row p { color: var(--muted); font-size: 14.5px; max-width: 620px; margin: 0 0 6px 0; }
-  .service-row ul { color: var(--muted); font-size: 13.5px; padding-left: 18px; margin: 0; }
-
-  .insight { border-left: 3px solid var(--gold); padding: 16px 22px; background: white; }
-  .insight h4 { font-size: 15.5px; margin-bottom: 6px; }
-  .insight p, .insight li { color: var(--muted); font-size: 14px; margin: 0; }
-
-  /* contact / footer */
-  .contact-section { background: var(--navy); color: #F4F1E8; }
-  .contact-section .section-sub { color: #C9D0D8; }
-  .contact-section h2 { color: #F4F1E8; }
-  .contact-direct { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
-  .contact-direct a {
-    display: flex; align-items: center; gap: 10px; text-decoration: none; color: #F4F1E8;
-    border: 1px solid rgba(244,241,232,0.3); padding: 12px 20px; font-size: 14.5px;
-  }
-  .contact-direct a:hover { border-color: var(--gold); color: var(--gold); }
-
-  .site-footer { background: var(--navy-deep); color: #B9C2CA; padding: 44px 8vw; font-size: 13.5px; }
-  .site-footer a { color: #F4F1E8; text-decoration: none; }
-  .site-footer .cols { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; }
-  .site-footer h5 { color: #F4F1E8; font-size: 12.5px; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 12px 0; }
-  .site-footer p { margin: 0 0 8px 0; }
-
-  @media (max-width: 768px) {
-    .hero h1 { font-size: 30px; }
-    .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
-    .nav-links { display: none; }
-    .contact-bar { justify-content: center; }
-    .service-row { flex-direction: column; gap: 8px; }
-  }
-</style>
-</head>
-<body>
-
-<!-- Top contact bar -->
-<div class="contact-bar">
-  <a href="mailto:researchhivesanalytics@gmail.com">✉ researchhivesanalytics@gmail.com</a>
-  <a href="https://wa.me/2348114547997" target="_blank" rel="noopener">WhatsApp: +234 811 454 7997</a>
-  <a href="tel:+2348114547997">Call: +234 811 454 7997</a>
-</div>
-
-<!-- Nav -->
-<nav class="site-nav">
-  <div class="brand">ResearchHive <span>Analytics Ltd</span></div>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#work">Our Work</a>
-    <a href="#academy">Academy</a>
-    <a href="#insights">Insights</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<!-- Hero -->
-<header class="hero">
-  <div class="eyebrow" style="color:#D8B26A;">RESEARCH METHODOLOGY · DATA ENGINEERING · M&amp;E</div>
-  <h1>Rigorous research support and data systems for institutions that need to get it right.</h1>
-  <p class="lede">
-    ResearchHive Analytics Ltd helps NGOs, academic researchers, and breeding programmes turn raw
-    data into decisions — through custom R Shiny platforms, survey digitalisation, M&amp;E design,
-    and hands-on graduate research support.
-  </p>
-  <div style="margin-top:30px;">
-    <a class="btn btn-gold" href="https://zekldj-daniella-ojekere.shinyapps.io/ResearchHive/" style="margin-right:12px;">Open the Full Platform</a>
-    <a class="btn btn-ghost" href="#contact">Get in Touch</a>
-  </div>
-</header>
-
-<!-- About / pillars -->
-<section class="section" id="about">
-  <div class="eyebrow">WHAT WE DO</div>
-  <h2 class="section-title">Four ways we support your research</h2>
-  <p class="section-sub">We work at the intersection of statistics, software, and fieldwork — built for teams who need defensible methods and tools that actually get used.</p>
-  <div class="grid grid-4">
-    <div class="pillar"><h4>Graduate Data Analysis</h4><p>Methodology guidance, statistical analysis, and weekly office hours for Master's and PhD researchers.</p></div>
-    <div class="pillar"><h4>R Shiny Engineering</h4><p>Custom web application development — turning statistical pipelines into tools people can actually use.</p></div>
-    <div class="pillar"><h4>Survey Digitalisation</h4><p>KoboToolbox/ODK form design, server setup, and field enumerator training.</p></div>
-    <div class="pillar"><h4>M&amp;E Consulting</h4><p>Results frameworks, indicator tracking, and instrument development for NGOs and donor-funded projects.</p></div>
-  </div>
-</section>
-
-<!-- Services -->
-<section class="section" id="services">
-  <div class="eyebrow">SERVICES</div>
-  <h2 class="section-title">Consulting &amp; engineering</h2>
-  <p class="section-sub">Engagements are scoped around your dataset, deadline, and institutional requirements.</p>
-
-  <div class="service-row">
-    <div class="num">01</div>
-    <div>
-      <h3>Custom R Shiny App Development &amp; Engineering</h3>
-      <p>Turn complex R scripts, statistical pipelines, or field data workflows into interactive web applications with real UI/UX design.</p>
-      <ul><li>Corporate branding, layout, and interaction design</li><li>Interactive tables, ggplot2 graphics, automated reporting</li><li>Deployment on Shinyapps.io, Posit Connect, or AWS</li></ul>
-    </div>
-  </div>
-  <div class="service-row">
-    <div class="num">02</div>
-    <div>
-      <h3>Mobile Survey Setup (KoboToolbox / ODK)</h3>
-      <p>Converting paper questionnaires into validated digital data collection instruments.</p>
-      <ul><li>Form coding with validation logic, constraints &amp; skip patterns</li><li>Secure cloud hosting configuration</li><li>Field enumerator training sessions</li></ul>
-    </div>
-  </div>
-  <div class="service-row">
-    <div class="num">03</div>
-    <div>
-      <h3>NGO M&amp;E System Design</h3>
-      <p>Monitoring &amp; evaluation consulting for donor-funded and NGO programmes.</p>
-      <ul><li>Results frameworks &amp; indicator tracking tables</li><li>Instrument development, pre-testing, psychometric validation</li><li>Baseline, mid-term, endline evaluations</li></ul>
-    </div>
-  </div>
-  <div class="service-row">
-    <div class="num">04</div>
-    <div>
-      <h3>Graduate Research &amp; Thesis Analysis Support</h3>
-      <p>Quantitative analysis support for Master's theses and PhD dissertations.</p>
-      <ul><li>Data cleaning, imputation, variable recoding</li><li>Parametric &amp; non-parametric testing, EFA/CFA, mediation</li><li>Publication-ready APA 7 tables and plain-English write-ups</li></ul>
-    </div>
-  </div>
-</section>
-
-<!-- Our work -->
-<section class="section" id="work">
-  <div class="eyebrow">OUR WORK</div>
-  <h2 class="section-title">Software we've built</h2>
-  <p class="section-sub">A proprietary suite of R Shiny platforms developed for research and breeding programmes.</p>
-  <div class="grid grid-3">
-    <div class="case-card">
-      <span class="case-tag">Survey Analytics</span>
-      <h3>ResearchHive Studio v2.0</h3>
-      <p>An end-to-end survey analytics platform: Upload → Validate → Explore → Test → Model → Interpret → Report.</p>
-      <ul><li>Data quality score engine</li><li>Scale development (Omega, parallel analysis)</li><li>Rank-based tests &amp; APA 7 export</li></ul>
-    </div>
-    <div class="case-card">
-      <span class="case-tag">Plant Breeding</span>
-      <h3>BreedVantage</h3>
-      <p>Plant breeding and agricultural trial analysis, from single-site to multi-environment models.</p>
-      <ul><li>Spatial mixed models (STA/MET)</li><li>BLUEs, BLUPs, heritability, GGE biplots</li><li>Genomic prediction (GBLUP)</li></ul>
-    </div>
-    <div class="case-card">
-      <span class="case-tag">Quantitative Genetics</span>
-      <h3>GENOTwin</h3>
-      <p>Genomic selection and pedigree/family modelling platform, co-developed for CGIAR breeding programmes.</p>
-      <ul><li>Pedigree &amp; kinship matrices</li><li>Polygenic risk scoring</li><li>GWA &amp; association pipeline</li></ul>
-    </div>
-  </div>
-</section>
-
-<!-- Academy -->
-<section class="section" id="academy">
-  <div class="eyebrow">ACADEMY</div>
-  <h2 class="section-title">Training &amp; office hours</h2>
-  <p class="section-sub">Free community webinars, weekend masterclasses, and weekly group coaching — see current offerings and register on the full platform.</p>
-  <div class="grid grid-2">
-    <div class="case-card">
-      <h3>Free Community Webinars</h3>
-      <p>Research methodology, data cleaning, survey &amp; questionnaire design — open sessions for graduate students and researchers.</p>
-    </div>
-    <div class="case-card">
-      <h3>Paid Masterclasses &amp; Office Hours</h3>
-      <p>Power BI, Advanced Excel, M&amp;E fundamentals, and a weekly graduate group coaching subscription for thesis troubleshooting.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Insights -->
-<section class="section" id="insights">
-  <div class="eyebrow">KNOWLEDGE HUB</div>
-  <h2 class="section-title">Insights</h2>
-  <p class="section-sub">Notes on research methodology, drawn from projects we work on.</p>
-  <div class="grid grid-2">
-    <div class="insight"><h4>Correlation vs. causation</h4><p>Two variables moving together doesn't mean one causes the other — check for confounders before recommending policy.</p></div>
-    <div class="insight"><h4>Three common questionnaire errors</h4><p>Double-barrelled questions, loaded or leading questions, and overlapping response categories.</p></div>
-    <div class="insight"><h4>Why Cronbach's Alpha isn't enough</h4><p>Alpha assumes tau-equivalence, which rarely holds. Many journals now also require McDonald's Omega.</p></div>
-    <div class="insight"><h4>Choosing the right test for Likert data</h4><p>Likert scales are ordinal — use Mann-Whitney U instead of a t-test for 2 groups, Kruskal-Wallis + Dunn's for 3+.</p></div>
-  </div>
-</section>
-
-<!-- Contact -->
-<section class="section contact-section" id="contact">
-  <div class="eyebrow" style="color:#D8B26A;">GET IN TOUCH</div>
-  <h2 class="section-title">Start a conversation</h2>
-  <p class="section-sub">Tell us about your project, dataset, or which service you're interested in — we'll respond within 24 hours. Full quote requests and orders are handled on our platform.</p>
-  <div class="contact-direct">
-    <a href="mailto:researchhivesanalytics@gmail.com">✉ researchhivesanalytics@gmail.com</a>
-    <a href="https://wa.me/2348114547997" target="_blank" rel="noopener">WhatsApp: +234 811 454 7997</a>
-    <a href="tel:+2348114547997">Call: +234 811 454 7997</a>
-  </div>
-  <div style="margin-top:26px;">
-    <a class="btn btn-gold" href="https://zekldj-daniella-ojekere.shinyapps.io/ResearchHive/">Submit a Request on the Platform</a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="site-footer">
-  <div class="cols">
-    <div>
-      <h5>ResearchHive Analytics Ltd</h5>
-      <p>Nigeria</p>
-      <p><a href="mailto:researchhivesanalytics@gmail.com">researchhivesanalytics@gmail.com</a></p>
-      <p><a href="tel:+2348114547997">+234 811 454 7997</a></p>
-    </div>
-    <div>
-      <h5>Explore</h5>
-      <p><a href="#about">About</a></p>
-      <p><a href="#services">Services</a></p>
-      <p><a href="#work">Our Work</a></p>
-    </div>
-    <div>
-      <h5>More</h5>
-      <p><a href="#academy">Academy</a></p>
-      <p><a href="#insights">Insights</a></p>
-      <p><a href="https://zekldj-daniella-ojekere.shinyapps.io/ResearchHive/">Full Platform ↗</a></p>
-    </div>
-  </div>
-  <p style="margin-top:30px; color:#7C8791;">© 2026 ResearchHive Analytics Ltd. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div class="contact-bar"><a href="mailto:researchhivesanalytics@gmail.com">✉ researchhivesanalytics@gmail.com</a><a href="https://wa.me/2348114547997" target="_blank" rel="noopener">WhatsApp: +234 811 454 7997</a></div>
+<header class="site-nav"><a class="brand" href="index.html"><img class="brand-mark" src="assets/images/logo-mark.png" alt="" width="34" height="40">ResearchHive <span>Analytics</span></a><button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<nav class="nav-links"><a href="about.html">About</a><a href="services.html">Services</a><a href="solutions.html">Solutions</a><a href="projects.html">Projects</a><a href="contact.html" class="nav-cta">Discuss a Project</a></nav></header>
+<main><section class="hero"><div class="eyebrow">RESEARCH & ANALYTICS · DATA SYSTEMS · DIGITAL INTELLIGENCE</div><h1>Turning Data into Evidence. Transforming Evidence into Decisions.</h1><p class="lede">ResearchHive Analytics Ltd partners with institutions, NGOs, development organisations, research teams and businesses to deliver reliable research, advanced analytics, intelligent data systems and digital solutions.</p><div class="actions"><a class="btn-gold" href="contact.html">Discuss a Project</a><a class="btn-ghost" href="solutions.html">Explore Our Solutions</a></div><p class="support">Your external research, analytics and data intelligence partner.</p></section>
+<section class="section split"><div><div class="eyebrow">WHO WE ARE</div><h2>Making research and data work for organisations.</h2></div><div><p>We combine research methodology, statistical science, data engineering and technology to help organisations strengthen their research processes, improve data quality, measure programme performance and translate information into actionable insights.</p><a class="text-link" href="about.html">More about ResearchHive →</a></div></section>
+<section class="section alt"><div class="eyebrow">OUR EXPERTISE</div><h2>Integrated research, analytics and technology solutions.</h2><p class="section-sub">We support organisations throughout the data lifecycle, combining technical expertise with practical implementation.</p><div class="grid three">
+<article class="tile"><div class="ic">▥</div><h3>Research & Statistical Analytics</h3><p>Research design, advanced statistical modelling and evaluation research that produce defensible evidence.</p></article>
+<article class="tile"><div class="ic">▤</div><h3>Monitoring, Evaluation, Research & Learning</h3><p>M&E frameworks, baseline to endline studies and impact evaluations for NGOs and development programmes.</p></article>
+<article class="tile"><div class="ic">▦</div><h3>Data Management & Digital Survey Systems</h3><p>KoboToolbox/ODK systems, databases and field workflows that replace fragmented manual data collection.</p></article>
+<article class="tile"><div class="ic">▧</div><h3>Business Intelligence & Data Engineering</h3><p>Power BI dashboards, data pipelines and automated reporting for decision-makers.</p></article>
+<article class="tile"><div class="ic">⌘</div><h3>Research Software & Digital Solutions</h3><p>Custom analytical platforms and decision-support tools built around your workflow.</p></article>
+<article class="tile"><div class="ic">◇</div><h3>Capacity Development & Technical Advisory</h3><p>Institutional training and advisory that build your team's analytical capability.</p></article></div><div class="section-foot"><a class="btn-line" href="services.html">Explore Our Services</a></div></section>
+<section class="section"><div class="eyebrow">SECTORS WE SUPPORT</div><h2>Technical expertise across sectors.</h2><div class="grid three">
+<article class="tile"><h3>International Development & NGOs</h3><p>Programme monitoring, evaluation, baseline assessments, impact measurement, digital data collection and donor reporting.</p></article>
+<article class="tile"><h3>Research Institutions & Universities</h3><p>Statistical consulting, research methodology, experimental design, analytical software and research data management.</p></article>
+<article class="tile"><h3>Agriculture & Food Systems</h3><p>Experimental design, multi-environment trial analysis, genomic prediction and agricultural data intelligence.</p></article>
+<article class="tile"><h3>Government & Public Sector</h3><p>Administrative data systems, policy research, programme evaluation and evidence-based planning.</p></article>
+<article class="tile"><h3>Health & Social Development</h3><p>Research design, survey analytics, programme evaluation and evidence generation.</p></article>
+<article class="tile"><h3>Private Sector & Businesses</h3><p>Operational performance, automated reporting and business intelligence solutions.</p></article></div></section>
+<section class="section alt"><div class="eyebrow">OUR TECHNOLOGY</div><h2>Purpose-built analytical tools. Practical digital solutions.</h2><p class="section-sub">Platforms that combine research expertise, statistical methodology and software engineering.</p><div class="grid two"><article class="card-rh"><img class="product-img" src="assets/images/researchhive-os.jpg" data-alts="researchhive-os.png,researchhive_os.png,researchhive_os.jpg,ResearchHive-OS.png" alt="ResearchHive OS platform screenshot" loading="lazy" onerror="var a=(this.dataset.alts||'').split(',').filter(Boolean);if(a.length){this.dataset.alts=a.slice(1).join(',');this.src='assets/images/'+a[0];}else{this.remove();}"><div class="product-placeholder">ResearchHive OS</div><span class="tag">Survey Analytics & Research Intelligence</span><h3>ResearchHive OS</h3><p>An end-to-end survey analytics pipeline, from data management and scale validation to predictive modelling and reporting.</p><a class="text-link" href="solutions.html#researchhive-os">View platform →</a></article><article class="card-rh"><img class="product-img" src="assets/images/breedvantage.jpg" data-alts="breedvantage.png,breedvantage.jpeg,breedvantage.webp,BreedVantage.png,BreedVantage.jpg,Breedvantage.png" alt="BreedVantage platform screenshot" loading="lazy" onerror="var a=(this.dataset.alts||'').split(',').filter(Boolean);if(a.length){this.dataset.alts=a.slice(1).join(',');this.src='assets/images/'+a[0];}else{this.remove();}"><div class="product-placeholder">BreedVantage</div><span class="tag">Agricultural Research & Plant Breeding Analytics</span><h3>BreedVantage</h3><p>Analytical support for agricultural experimentation, plant breeding and multi-environment trials.</p><a class="text-link" href="solutions.html#breedvantage">View platform →</a></article><article class="card-rh"><img class="product-img" src="assets/images/genotwin.jpg" data-alts="genotwin.png,genotwin.jpeg,genotwin.webp,GENOTwin.png,GENOTwin.jpg,GenoTwin.png,Genotwin.png" alt="GENOTwin platform screenshot" loading="lazy" onerror="var a=(this.dataset.alts||'').split(',').filter(Boolean);if(a.length){this.dataset.alts=a.slice(1).join(',');this.src='assets/images/'+a[0];}else{this.remove();}"><div class="product-placeholder">GENOTwin</div><span class="tag">Genomic Selection & Breeding Decision Support</span><h3>GENOTwin</h3><p>A specialised platform for genomic prediction, quantitative genetics and breeding decisions.</p><a class="text-link" href="solutions.html#genotwin">View platform →</a></article><article class="card-rh"><img class="product-img" src="assets/images/climagene.jpg" data-alts="climagene.png,ClimaGene.png,ClimaGene.jpg" alt="ClimaGene platform screenshot" loading="lazy" onerror="var a=(this.dataset.alts||'').split(',').filter(Boolean);if(a.length){this.dataset.alts=a.slice(1).join(',');this.src='assets/images/'+a[0];}else{this.remove();}"><div class="product-placeholder">ClimaGene</div><span class="tag">Envirotyping & Variety Placement</span><h3>ClimaGene</h3><p>Envirotype-informed genomic prediction that recommends where each variety will perform best.</p><a class="text-link" href="solutions.html#climagene">View platform →</a></article></div><div class="section-foot"><a class="btn-line" href="solutions.html">Explore All Solutions</a></div></section>
+<section class="cta-band"><div><h2>Let's solve your data challenge.</h2><p>Start a conversation about your next research, analytics or digital transformation project.</p></div><a class="btn-gold" href="contact.html">Discuss a Project</a></section></main>
+<footer class="site-footer"><div class="footer-cols"><div><h3>ResearchHive Analytics Ltd</h3><p class="gold-text">Research. Data. Intelligence. Impact.</p><p>Your institutional partner for research, data analytics and digital intelligence.</p></div><div><h4>Explore</h4><a href="about.html">About Us</a><a href="services.html">Services</a><a href="solutions.html">Solutions</a><a href="projects.html">Projects</a></div><div><h4>Contact</h4><span>Nigeria</span><a href="mailto:researchhivesanalytics@gmail.com">researchhivesanalytics@gmail.com</a><a href="tel:+2348114547997">+234 811 454 7997</a><a href="https://wa.me/2348114547997" target="_blank" rel="noopener">WhatsApp us</a></div></div><p class="copyright">© 2026 ResearchHive Analytics Ltd. All rights reserved.</p></footer><script src="js/main.js"></script></body></html>
