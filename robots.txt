@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://daniellaamba.github.io/Researchhive/sitemap.xml
+Sitemap: https://daniellaojekere.github.io/Researchhive/sitemap.xml
